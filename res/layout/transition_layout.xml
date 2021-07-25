@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2017 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<com.android.launcher3.transition.TransitionLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    android:orientation="vertical" >
+
+    <com.android.launcher3.transition.CustomizedHorizontalScrollView
+        android:id="@+id/transition_scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fadeScrollbars="true">
+        <LinearLayout
+            android:id="@+id/scroll_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/options_view_bottom_margin">
+            <ch.deletescape.lawnchair.views.OptionsTextView
+                android:id="@+id/transition_default_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="4dp"
+                android:drawableTop="@drawable/launcher_edit_transition_defult_pressed"
+                android:fontFamily="sans-serif-condensed"
+                android:gravity="center_horizontal"
+                android:stateListAnimator="@animator/overview_button_anim"
+                android:text="@string/transition_default"
+                android:textColor="?attr/workspaceTextColor"
+                android:textSize="12sp" />
+            <ch.deletescape.lawnchair.views.OptionsTextView
+                android:id="@+id/transition_perspective_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="4dp"
+                android:drawableTop="@drawable/launcher_edit_transition_perspective_pressed"
+                android:fontFamily="sans-serif-condensed"
+                android:gravity="center_horizontal"
+                android:stateListAnimator="@animator/overview_button_anim"
+                android:text="@string/transition_perspective"
+                android:textColor="?attr/workspaceTextColor"
+                android:textSize="12sp" />
+            <ch.deletescape.lawnchair.views.OptionsTextView
+                android:id="@+id/transition_squeeze_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="4dp"
+                android:drawableTop="@drawable/launcher_edit_transition_squeeze_pressed"
+                android:fontFamily="sans-serif-condensed"
+                android:gravity="center_horizontal"
+                android:stateListAnimator="@animator/overview_button_anim"
+                android:text="@string/transition_squeeze"
+                android:textColor="?attr/workspaceTextColor"
+                android:textSize="12sp" />
+            <ch.deletescape.lawnchair.views.OptionsTextView
+                android:id="@+id/transition_cube_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="4dp"
+                android:drawableTop="@drawable/launcher_edit_transition_box_pressed"
+                android:fontFamily="sans-serif-condensed"
+                android:gravity="center_horizontal"
+                android:stateListAnimator="@animator/overview_button_anim"
+                android:text="@string/transition_cube"
+                android:textColor="?attr/workspaceTextColor"
+                android:textSize="12sp" />
+            <ch.deletescape.lawnchair.views.OptionsTextView
+                android:id="@+id/transition_flip_over_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="4dp"
+                android:drawableTop="@drawable/launcher_edit_transition_filpover_pressed"
+                android:fontFamily="sans-serif-condensed"
+                android:gravity="center_horizontal"
+                android:stateListAnimator="@animator/overview_button_anim"
+                android:text="@string/transition_flip_over"
+                android:textColor="?attr/workspaceTextColor"
+                android:textSize="12sp" />
+            <ch.deletescape.lawnchair.views.OptionsTextView
+                android:id="@+id/transition_rotate_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="4dp"
+                android:drawableTop="@drawable/launcher_edit_transition_rotate_pressed"
+                android:fontFamily="sans-serif-condensed"
+                android:gravity="center_horizontal"
+                android:stateListAnimator="@animator/overview_button_anim"
+                android:text="@string/transition_rotate"
+                android:textColor="?attr/workspaceTextColor"
+                android:textSize="12sp" />
+            <ch.deletescape.lawnchair.views.OptionsTextView
+                android:id="@+id/transition_cascade_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="4dp"
+                android:drawableTop="@drawable/launcher_edit_transition_cascade_pressed"
+                android:fontFamily="sans-serif-condensed"
+                android:gravity="center_horizontal"
+                android:stateListAnimator="@animator/overview_button_anim"
+                android:text="@string/transition_cascade"
+                android:textColor="?attr/workspaceTextColor"
+                android:textSize="12sp" />
+            <ch.deletescape.lawnchair.views.OptionsTextView
+                android:id="@+id/transition_windmill_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="4dp"
+                android:drawableTop="@drawable/launcher_edit_transition_windmill_pressed"
+                android:fontFamily="sans-serif-condensed"
+                android:gravity="center_horizontal"
+                android:stateListAnimator="@animator/overview_button_anim"
+                android:text="@string/transition_windmill"
+                android:textColor="?attr/workspaceTextColor"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </com.android.launcher3.transition.CustomizedHorizontalScrollView>
+
+</com.android.launcher3.transition.TransitionLayout>

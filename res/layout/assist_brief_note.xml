@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.launcher3.assistant.AssistBriefNote
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_marginTop="@dimen/assist_item_top_margin"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/assist_favorite_item_height"
+    android:padding="10dp"
+    android:clickable="true"
+    android:orientation="vertical"
+    android:background="@drawable/round_rect_assist_views"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:id="@+id/dialog_start_title"
+            android:padding="5dp"
+            android:clickable="true"
+            android:background="@drawable/assist_view_title_background"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_edit_no_shadow" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:layout_marginStart="10dp"
+                android:textColor="#121212"
+                android:textStyle="bold"
+                android:text="@string/brief_note" />
+
+        </LinearLayout>
+        <View
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            style="@style/favoriteItemEndTitleStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/brief_note_add"/>
+
+        <ImageButton
+            android:id="@+id/menu_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:tint="#232323"
+            android:background="?android:selectableItemBackgroundBorderless"
+            android:src="@drawable/dots_vertical"/>
+    </LinearLayout>
+
+</com.android.launcher3.assistant.AssistBriefNote>

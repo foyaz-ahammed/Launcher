@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~     Copyright (C) 2020 Lawnchair Team.
+  ~
+  ~     This file is part of Lawnchair Launcher.
+  ~
+  ~     Lawnchair Launcher is free software: you can redistribute it and/or modify
+  ~     it under the terms of the GNU General Public License as published by
+  ~     the Free Software Foundation, either version 3 of the License, or
+  ~     (at your option) any later version.
+  ~
+  ~     Lawnchair Launcher is distributed in the hope that it will be useful,
+  ~     but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~     GNU General Public License for more details.
+  ~
+  ~     You should have received a copy of the GNU General Public License
+  ~     along with Lawnchair Launcher.  If not, see <https://www.gnu.org/licenses/>.
+  -->
+
+<com.android.launcher3.assistant.AssistMenuLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/phone_menu_layout"
+    android:clipToPadding="true"
+    android:clipChildren="true"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/round_rect_assist_views"
+    android:paddingBottom="15dp"
+    android:layout_marginBottom="30dp"
+    android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/phones_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:textSize="@dimen/phone_item_popup_title_text_size"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"/>
+
+    <com.android.launcher3.assistant.search.MaxHeightRecyclerView
+        android:id="@+id/search_phone_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+    
+</com.android.launcher3.assistant.AssistMenuLayout>

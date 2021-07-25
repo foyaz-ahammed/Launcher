@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/assist_main_view"
+    >
+
+    <include
+        layout="@layout/assist_top_header" />
+
+    <include
+        layout="@layout/assist_search_box" />
+
+    <include
+        layout="@layout/assist_shortcut_apps" />
+
+    <com.android.launcher3.assistant.AssistEstimationView
+        android:id="@+id/assist_memory_and_step"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        >
+
+        <include
+            layout="@layout/assist_memory"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginEnd="5dp"
+            />
+
+        <include
+            layout="@layout/assist_step"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="5dp"
+            />
+
+    </com.android.launcher3.assistant.AssistEstimationView>
+
+    <include
+        layout="@layout/assist_calendar" />
+
+    <include
+        layout="@layout/assist_clock" />
+
+    <include
+        layout="@layout/assist_favorite_contacts" />
+
+</LinearLayout>

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2007 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<!-- 기본화면 -->
+<com.android.launcher3.LauncherRootView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:launcher="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/launcher"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <!-- 배경화면 -->
+    <ch.deletescape.lawnchair.views.LawnchairBackgroundView
+        android:id="@+id/lawnchair_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <!-- Assist페지, Home화면 -->
+    <com.android.launcher3.Desktop
+        android:id="@+id/desktop"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- Assist페지 -->
+        <com.android.launcher3.assistant.AssistViewsContainer
+            android:id="@+id/assistant"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:elevation="100dp"
+            >
+            <com.chauthai.overscroll.RecyclerViewBouncy
+                android:id="@+id/assist_main_scrollView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:speedFactor="5"
+                app:gapLimit="120"
+                app:friction="100" />
+        </com.android.launcher3.assistant.AssistViewsContainer>
+
+        <!-- Home화면 -->
+        <com.android.launcher3.dragndrop.DragLayer
+            android:id="@+id/drag_layer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipChildren="false"
+            android:clipToPadding="false"
+            android:importantForAccessibility="no">
+
+            <!-- Home화면을 길게 눌렀을때 우에 현시되는 label -->
+            <TextView
+                android:id="@+id/workspace_description_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:alpha="0"
+                android:textColor="@color/workspace_drag_label_color"
+                android:text="@string/workspace_drag_label"
+                />
+
+            <View
+                android:id="@+id/dummy_view"
+                android:layout_width="0dp"
+                android:layout_height="0dp" />
+
+            <!-- The workspace contains 5 screens of cells -->
+            <!-- DO NOT CHANGE THE ID -->
+            <com.android.launcher3.Workspace
+                android:id="@+id/workspace"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:theme="@style/HomeScreenElementTheme"
+                launcher:pageIndicator="@+id/page_indicator" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="10dp"
+                android:id="@+id/workspace_blocked_row" />
+
+            <include
+                android:id="@+id/overview_panel"
+                layout="@layout/overview_panel"
+                android:visibility="gone" />
+
+            <!-- Keep these behind the workspace so that they are not visible when
+             we go into AllApps -->
+            <include
+                android:id="@+id/drop_target_bar"
+                layout="@layout/drop_target_bar"/>
+
+            <include
+                android:id="@+id/scrim_view"
+                layout="@layout/scrim_view"/>
+
+            <include
+                android:id="@+id/options_view"
+                layout="@layout/options_view" />
+
+            <com.android.launcher3.pageindicators.WorkspacePageIndicator xmlns:attrs="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/page_indicator"
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:layout_centerInParent="true"
+                app:piv_animationType="worm"
+                app:piv_dynamicCount="true"
+                app:piv_interactiveAnimation="true"
+                app:piv_selectedColor="@color/page_indicator_selected_color"
+                app:piv_unselectedColor="@color/page_indicator_unselected_color"
+                android:layout_gravity="bottom"
+                attrs:piv_padding="@dimen/page_indicator_small_padding"
+                attrs:piv_radius="@dimen/page_indicator_radius" />
+
+            <include
+                android:id="@+id/apps_view"
+                layout="@layout/all_apps"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="invisible" />
+
+            <!-- DO NOT CHANGE THE ID -->
+            <include
+                android:id="@+id/hotseat"
+                layout="@layout/hotseat"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </com.android.launcher3.dragndrop.DragLayer>
+
+    </com.android.launcher3.Desktop>
+
+</com.android.launcher3.LauncherRootView>

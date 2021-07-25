@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.launcher3.assistant.search.searchItems.SearchItemContacts
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/search_item_height"
+    android:paddingStart="@dimen/search_item_padding_h"
+    android:paddingEnd="@dimen/search_item_padding_h"
+    android:clickable="true"
+    android:background="@drawable/search_item_background">
+
+    <!-- Item icon -->
+    <ImageView
+        android:id="@+id/item_icon"
+        android:layout_width="@dimen/search_item_icon_size"
+        android:layout_height="@dimen/search_item_icon_size"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/ic_person_light_large"
+        android:background="@drawable/search_sms_default_icon"
+        />
+
+    <!-- Rest region excluding icon -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="@dimen/search_item_icon_margin">
+
+        <TextView
+            android:id="@+id/item_name"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:layout_alignParentStart="true"
+            android:textSize="@dimen/search_item_title_text_size"
+            android:textColor="@android:color/black" />
+
+        <ImageView
+            android:id="@+id/item_dialer"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_phone"
+            android:tint="@drawable/search_phone_item_button_touch_selector"
+            android:paddingStart="@dimen/search_item_icon_margin"
+            android:layout_toStartOf="@+id/item_message" />
+
+        <ImageView
+            android:id="@+id/item_message"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_message"
+            android:tint="@drawable/search_phone_item_button_touch_selector"
+            android:paddingStart="@dimen/search_item_icon_margin"
+            android:layout_alignParentEnd="true" />
+
+    </RelativeLayout>
+
+</com.android.launcher3.assistant.search.searchItems.SearchItemContacts>

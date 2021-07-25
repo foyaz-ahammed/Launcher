@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.apps.nexuslauncher.qsb.AllAppsQsbLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_gravity="center|top"
+    android:id="@+id/search_container_all_apps"
+    android:background="@drawable/bg_qsb_click_feedback"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/qsb_widget_height"
+    android:layout_centerHorizontal="true"
+    android:contentDescription="@string/search"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp"
+    android:translationY="30.0dip">
+    <ImageView
+        android:layout_gravity="start|center"
+        android:id="@+id/g_search_icon"
+        android:layout_height="fill_parent"
+        android:layout_width="@dimen/qsb_mic_width"
+        android:tint="@color/all_apps_search_image_color"
+        android:src="@drawable/icon_search_24"
+        android:layout_marginTop="-6.0dip"
+        android:layout_marginBottom="-6.0dip"
+        android:scaleType="center"/>
+    <include layout="@layout/qsb_hint" />
+</com.google.android.apps.nexuslauncher.qsb.AllAppsQsbLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="fadeinAnimTime">200</integer>
+    <integer name="fadeoutAnimTime">200</integer>
+    <integer name="folder_grid_count_x">3</integer>
+    <integer name="folder_grid_count_y">4</integer>
+
+    <!-- Integer values for playing transition effects -->
+    <integer name="card_flip_time_half">125</integer>
+    <integer name="transition_common_duration">250</integer>
+</resources>

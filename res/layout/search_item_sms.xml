@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.launcher3.assistant.search.searchItems.SearchItemSms
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/search_item_height"
+    android:paddingStart="@dimen/search_item_padding_h"
+    android:paddingEnd="@dimen/search_item_padding_h"
+    android:clickable="true"
+    android:background="@drawable/search_item_background">
+
+    <!-- Item icon -->
+    <ImageView
+        android:id="@+id/item_img"
+        android:layout_width="@dimen/search_item_icon_size"
+        android:layout_height="@dimen/search_item_icon_size"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/ic_person_light_large"
+        android:background="@drawable/search_sms_default_icon"
+        />
+
+    <!-- Rest region excluding icon -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginStart="@dimen/search_item_icon_margin">
+
+        <RelativeLayout
+            android:id="@+id/item_address"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            >
+
+            <TextView
+                android:id="@+id/item_title"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:gravity="bottom"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textSize="@dimen/search_item_title_text_size"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:id="@+id/item_modified_date"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:layout_alignParentEnd="true"
+                android:textColor="@android:color/black"
+                android:layout_marginStart="@dimen/search_item_padding_h"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/item_short_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textSize="@dimen/search_item_title_text_size"
+                android:textColor="@android:color/black"
+                />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+
+</com.android.launcher3.assistant.search.searchItems.SearchItemSms>

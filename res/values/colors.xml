@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/* //device/apps/common/assets/res/any/colors.xml
+**
+** Copyright 2008, The Android Open Source Project
+**
+** Licensed under the Apache License, Version 2.0 (the "License");
+** you may not use this file except in compliance with the License.
+** You may obtain a copy of the License at
+**
+**     http://www.apache.org/licenses/LICENSE-2.0
+**
+** Unless required by applicable law or agreed to in writing, software
+** distributed under the License is distributed on an "AS IS" BASIS,
+** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+** See the License for the specific language governing permissions and
+** limitations under the License.
+*/
+-->
+<resources>
+    <!-- The color tints to apply to the text and drag view when hovering
+         over the delete target or the info target -->
+    <color name="delete_target_hover_tint">#FFC1C1C1</color>
+    <color name="uninstall_target_hover_tint">#FFF0592B</color>
+
+    <color name="focused_background">#80c6c5c5</color>
+
+    <color name="default_shadow_color_no_alpha">#FF000000</color>
+
+    <color name="spring_loaded_panel_color">#40FFFFFF</color>
+    <color name="spring_loaded_highlighted_panel_border_color">#FFF</color>
+
+    <!-- Popup container -->
+    <color name="notification_icon_default_color">#757575</color> <!-- Gray 600 -->
+
+    <color name="icon_background">#ff4285f4</color> <!-- Pixel Blue -->
+    <color name="legacy_icon_background">#FFFFFF</color>
+
+    <color name="all_apps_bg_hand_fill">#E5E5E5</color>
+    <color name="all_apps_bg_hand_fill_dark">#9AA0A6</color>
+
+    <!-- Backports -->
+    <color name="textColorPrimary">#ffffffff</color>
+    <color name="textColorSecondary">#ffffffff</color>
+    <color name="textColorPrimaryInverse">#de000000</color>
+    <color name="textColorSecondaryInverse">#8a000000</color>
+    <!--<color name="textColorSecondaryInverse">#ffffffff</color>-->
+
+    <color name="colorPrimary">#fff5f5f5</color>
+    <color name="colorPrimaryDark">#ffe0e0e0</color>
+    <color name="colorSecondary">#ffeeeeee</color>
+
+    <color name="lollipopStatusBar">#61000000</color>
+    <color name="all_apps_navbar_color">#28000000</color>
+
+    <!-- Pixel -->
+    <color name="colorAccent">#ff1A73E8</color>
+    <color name="colorAccentDark">#ff8AB4f8</color>
+
+    <color name="qsb_icon_shadow_color">#20000000</color>
+    <color name="qsb_dark_icon_tint">#ff757575</color>
+
+    <color name="qsb_background_hotseat_default">#99fafafa</color>
+    <color name="qsb_background_hotseat_white">#ccffffff</color>
+    <color name="qsb_background_hotseat_dark">#cc333333</color>
+    <color name="qsb_background_drawer_default">#ccffffff</color>
+    <color name="qsb_background_drawer_dark">#ebffffff</color>
+    <color name="qsb_background_drawer_dark_bar">#f9333333</color>
+    <!-- <color name="qsb_background_drawer_black">#ee000000</color> -->
+    <color name="qsb_drawer_text_color_normal">#ff212121</color>
+    <color name="qsb_drawer_text_color_dark">#ffe0e0e0</color>
+
+    <!-- Pixel 1 -->
+    <color name="qsb_connector">#fff2f2f2</color>
+    <color name="qsb_background">#ffffffff</color>
+    <color name="qsb_background_dark">#ff333333</color>
+    <color name="qsb_connector_gradient_end_color">#66ffffff</color>
+
+    <color name="settings_background_dark">#ff151618</color>
+    <color name="settings_background_dark_2dp">#ff252628</color>
+    <color name="settings_background_dark_8dp">#ff303133</color>
+
+    <color name="settings_background_black">#ff000000</color>
+    <color name="settings_background_black_2dp">#ff121212</color>
+    <color name="settings_background_black_8dp">#ff1e1e1e</color>
+
+    <color name="all_apps_label_text">#61000000</color>
+    <color name="all_apps_label_text_dark">#61ffffff</color>
+
+    <!-- Page Indicator selected and unselected page circle color -->
+    <color name="page_indicator_selected_color">#ffffff</color>
+    <color name="page_indicator_unselected_color">#A9A9A9</color>
+
+    <color name="all_apps_text_color">#ffffffff</color>
+    <color name="all_apps_search_image_color">#ffffff</color>
+    <color name="all_apps_search_text_color">#ddffffff</color>
+    <color name="all_apps_background_color">#efefef</color>
+
+    <!-- App Drawer Heading label text color -->
+    <color name="apps_heading_label_text_color">#ffffff</color>
+
+    <!-- Folder view background color -->
+    <color name="folder_preview_background_color">#ffffff</color>
+    <color name="folder_view_big_background_color">#80a8a8a8</color>
+    <color name="folder_view_background_color">#80d3d3d3</color>
+    <color name="folder_label_text_color">#efefef</color>
+
+    <!-- Color for selected transition item -->
+    <color name="transition_selected_color">#087EF9</color>
+    <color name="transition_unselected_color">#ffffffff</color>
+
+    <!-- Color for workspace drag label color -->
+    <color name="workspace_drag_label_color">#ffffff</color>
+
+    <!-- Color for add button color in folder -->
+    <color name="add_button_background_color">#88e3e3e3</color>
+
+    <!-- Color for drawing dark icons -->
+    <color name="dark_icon_color_mask">#ffaaaaaa</color>
+    <color name="dark_icon_color_mask_add">#ffcccccc</color>
+
+    <!-- Color for widget item text -->
+    <color name="widget_item_text_color">#ffffff</color>
+
+    <!-- Widget cell background color -->
+    <color name="widget_cell_main_bg_color">#40eeeeee</color>
+    <color name="widget_cell_label_bg_color">#40eeeeee</color>
+
+    <!-- Widget cell label text color -->
+    <color name="widget_cell_main_text_color">#ffffff</color>
+    <color name="widget_cell_secondary_text_color">#eeffff</color>
+
+    <!-- Top Widget label text color -->
+    <color name="add_widget_text_color">#ffffff</color>
+
+    <!-- Color for menu item pressed -->
+    <color name="menu_item_pressed_color">#88ffffff</color>
+    <color name="quick_access_shortcuts_outline_color">#ffffff</color>
+
+    <!-- End title text color of favorite item -->
+    <color name="favorite_item_end_title_color">#0269A4</color>
+
+    <!-- Memory fill color -->
+    <color name="used_memory_fill_color">#d581B6FC</color>
+
+    <!-- Quick Access Shortcut app text color -->
+    <color name="quick_access_app_text_color_primary">#3c3c3c</color>
+    <color name="quick_access_app_text_color_secondary">#d3d3d3</color>
+
+    <!-- Colors for ongoing and general event background -->
+    <color name="ongoing_background">#3398FB98</color>
+    <color name="ongoing_left_side_background">#73B779</color>
+    <color name="ongoing_label_text_color">#73B779</color>
+    <color name="further_background">#3398B0BB</color>
+    <color name="further_left_side_background">#98B0BB</color>
+    <color name="further_label_text_color">#98B0BB</color>
+    <color name="upcoming_background">#33F5804D</color>
+    <color name="upcoming_left_side_background">#F5804D</color>
+    <color name="upcoming_label_text_color">#F5804D</color>
+
+    <!-- Colors for search result views -->
+    <color name="search_keyword_highlight_color">#26A3D5</color>
+    <color name="search_item_selected_bg_color">#12121212</color>
+</resources>

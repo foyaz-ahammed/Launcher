@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="10dp"
+    android:id="@+id/search_result_container"
+    >
+
+    <com.android.launcher3.assistant.search.searchItems.SearchAppsContainer
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:searchItemTitle="@string/search_item_apps" />
+
+    <com.android.launcher3.assistant.search.searchItems.SearchSettingsContainer
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:searchItemTitle="@string/search_item_settings" />
+
+    <com.android.launcher3.assistant.search.searchItems.SearchContactsContainer
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:searchItemTitle="@string/search_item_contacts"  />
+
+    <com.android.launcher3.assistant.search.searchItems.SearchSmsContainer
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:searchItemTitle="@string/search_item_sms" />
+
+    <com.android.launcher3.assistant.search.searchItems.SearchImageContainer
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:searchItemTitle="@string/search_item_images" />
+
+    <com.android.launcher3.assistant.search.searchItems.SearchAudioContainer
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:searchItemTitle="@string/search_item_audios" />
+
+    <com.android.launcher3.assistant.search.searchItems.SearchVideoContainer
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:searchItemTitle="@string/search_item_videos" />
+
+    <include
+        android:id="@+id/search_no_result"
+        android:visibility="gone"
+        layout="@layout/assist_search_no_result" />
+
+</LinearLayout>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.android.launcher3.assistant.AssistMenuLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/search_history_clear_confirm"
+    android:clipToPadding="true"
+    android:clipChildren="true"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/round_rect_assist_views"
+    android:padding="15dp"
+    android:layout_marginBottom="30dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/search_history_clear_desc_padding"
+        android:text="@string/search_history_clear_desc"
+        android:gravity="center_horizontal"
+        android:textSize="@dimen/search_history_popup_text_size"
+        android:textColor="@android:color/black"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/search_history_popup_buttons_padding_top"
+        >
+
+        <TextView
+            android:id="@+id/cancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingTop="@dimen/search_item_padding_v"
+            android:paddingBottom="@dimen/search_item_padding_v"
+            android:layout_marginEnd="5dp"
+            android:gravity="center_horizontal"
+            android:textAllCaps="true"
+            android:textColor="@android:color/holo_blue_light"
+            android:textSize="@dimen/search_history_popup_text_size"
+            android:text="@string/search_history_clear_cancel"
+            android:textStyle="bold"
+            android:background="@drawable/search_history_popup_button_background"
+            />
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/search_history_popup_buttons_divider_margin"
+            android:layout_marginBottom="@dimen/search_history_popup_buttons_divider_margin"
+            android:background="@android:color/darker_gray" />
+
+        <TextView
+            android:id="@+id/clear"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingTop="@dimen/search_item_padding_v"
+            android:paddingBottom="@dimen/search_item_padding_v"
+            android:layout_marginStart="5dp"
+            android:gravity="center_horizontal"
+            android:textAllCaps="true"
+            android:textColor="@android:color/holo_red_light"
+            android:textSize="@dimen/search_history_popup_text_size"
+            android:text="@string/clear_search_history"
+            android:textStyle="bold"
+            android:background="@drawable/search_history_popup_button_background"
+            />
+
+    </LinearLayout>
+    
+</com.android.launcher3.assistant.AssistMenuLayout>

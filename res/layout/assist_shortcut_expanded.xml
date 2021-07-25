@@ -1,0 +1,97 @@
+<!--
+  ~     Copyright (C) 2020 Lawnchair Team.
+  ~
+  ~     This file is part of Lawnchair Launcher.
+  ~
+  ~     Lawnchair Launcher is free software: you can redistribute it and/or modify
+  ~     it under the terms of the GNU General Public License as published by
+  ~     the Free Software Foundation, either version 3 of the License, or
+  ~     (at your option) any later version.
+  ~
+  ~     Lawnchair Launcher is distributed in the hope that it will be useful,
+  ~     but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~     GNU General Public License for more details.
+  ~
+  ~     You should have received a copy of the GNU General Public License
+  ~     along with Lawnchair Launcher.  If not, see <https://www.gnu.org/licenses/>.
+  -->
+
+<com.android.launcher3.assistant.AssistQuickAccess
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:orientation="vertical">
+
+    <!-- Top area background is transparent -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/assist_quick_access_views_padding"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/topHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp">
+
+            <ImageView
+                android:id="@+id/back_button"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_gravity="center_vertical"
+                android:clickable="true"
+                android:tint="@android:color/white"
+                android:src="@drawable/ic_back"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_gravity="center_vertical"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                android:text="@string/quick_access"/>
+
+        </LinearLayout>
+
+        <!-- Shortcuts that will be showing -->
+        <com.android.launcher3.assistant.AssistDisplayShortcutsView
+            android:id="@+id/display_shortcuts"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal" />
+
+        <!-- Description to drag shortcuts -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textColor="#efefef"
+            android:textAlignment="center"
+            android:text="@string/shortcut_drag_description"
+            />
+
+    </LinearLayout>
+
+    <!-- Bottom area background is white -->
+    <LinearLayout
+        android:id="@+id/shortcut_views_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@android:color/white">
+
+        <!-- All shortcuts -->
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/all_shortcuts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/assist_quick_access_views_padding"
+            android:paddingEnd="@dimen/assist_quick_access_views_padding" />
+
+    </LinearLayout>
+
+</com.android.launcher3.assistant.AssistQuickAccess>

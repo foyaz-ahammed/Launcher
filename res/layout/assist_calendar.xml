@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.launcher3.assistant.AssistantCalendar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/assist_calendar"
+    android:layout_marginTop="@dimen/assist_item_top_margin"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:orientation="vertical"
+    android:background="@drawable/round_rect_assist_views"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:id="@+id/dialog_start_title"
+            android:padding="5dp"
+            android:clickable="true"
+            android:background="@drawable/assist_view_title_background"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/app_icon"
+                android:layout_width="25dp"
+                android:layout_height="25dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:layout_marginStart="10dp"
+                android:textColor="#121212"
+                android:textStyle="bold"
+                android:text="@string/calendar_label" />
+
+        </LinearLayout>
+        <View
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"/>
+
+        <TextView
+            android:id="@+id/dialog_end_title"
+            style="@style/favoriteItemEndTitleStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/calendar_add_event_label"/>
+
+        <ImageButton
+            android:id="@+id/menu_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:tint="#232323"
+            android:background="?android:selectableItemBackgroundBorderless"
+            android:src="@drawable/dots_vertical"/>
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/upcoming_event_list"
+        android:layout_marginStart="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</com.android.launcher3.assistant.AssistantCalendar>

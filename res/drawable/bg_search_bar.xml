@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<inset xmlns:android="http://schemas.android.com/apk/res/android"
+    android:insetBottom="@dimen/qsb_shadow_margin"
+    android:insetLeft="@dimen/qsb_shadow_margin"
+    android:insetRight="@dimen/qsb_shadow_margin"
+    android:insetTop="@dimen/qsb_shadow_margin">
+    <shape xmlns:android="http://schemas.android.com/apk/res/android"
+        android:shape="rectangle">
+        <solid android:color="#33ffffff" />
+        <corners android:radius="100dp" />
+    </shape>
+</inset>
